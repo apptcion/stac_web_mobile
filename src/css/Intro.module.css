@@ -6,7 +6,7 @@
 
 .first{
     width : 91vw;
-    height : calc(80vh - 3px);
+    height : calc(100vh - 3px);
     display : flex;
     justify-content: center;
     align-items: center;

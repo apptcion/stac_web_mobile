@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Header from './header'
 import HeaderStyles from '../css/header.module.css'
 import Intro from './intro'
+import BrandApply from './brandApply'
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       <Header state={screen} setState={changeScreen}/>
       {screen === HeaderStyles.intro && <Intro />}
       {screen === HeaderStyles.costmer_apply && <></>}
-      {screen === HeaderStyles.brand_apply && <></>}
+      {screen === HeaderStyles.brand_apply && <BrandApply />}
     </main>    
   );
 }

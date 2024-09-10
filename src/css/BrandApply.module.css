@@ -1,0 +1,254 @@
+.main{
+    width : 100vw;
+    height : 100vh;
+    overflow : hidden;
+}
+
+.page{
+    position : relative;
+    top : 9vh;
+    width : 100vw;
+    height : 91vh;
+    display : flex;
+    justify-content: center;
+    flex-wrap : wrap;
+    margin : 0 auto;
+    overflow-y : scroll;
+}
+
+.title_wrap{
+    margin-top : 12vh;
+    width : 60vw;
+    height : 10.3vh;
+    display : flex;
+    justify-content: center;
+    flex-wrap : wrap;
+    align-items: center;
+    margin-bottom : 6vh;
+}
+
+.title{
+    width : 23vw;
+    height : 4vh; 
+     font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size : 2vw;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: -10px;
+}
+
+.boon{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    width : 100%;
+    height : 3vh;
+    font-size : 1.3vw;
+    color : #FF9A00;
+}
+
+.brand_name{
+    width : 60vw;
+    height : 9vh;
+    display : flex;
+    justify-content: center;
+}
+
+.input_brand{
+    color : rgba(0,0,0,1) !important;
+}
+
+.select_brand_type{
+    margin-top : 3.5vh;
+    width : 40.01vw;
+    height : 11.8vh;
+    display : flex;
+    justify-content: space-between;
+}
+
+.selected{
+    background-color: #FF9A00;
+    color : white !important;
+}
+
+.brand{
+    width : 19.5vw;
+    height : 90%;
+    border : solid 0.38px #585858;
+    border-radius: 1vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 1.6vw;
+    color : #585858;
+    cursor: pointer;
+}
+
+.input{
+    border : solid 0.38px #585858;
+    border-radius: 1.5vh;
+    width : 40vw;
+    height : 100%;
+    font-size : 1.6vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+.input::placeholder{
+    font-size : 1.7vw;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.show_policy{
+    width : 60vw;
+    height : fit-content;
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.check{
+    position : relative;
+    left : 0.7vw;
+    width : 67%;
+    color : #565656;
+    font-size : 1.1vw;
+}
+
+.policy{
+    width : calc(67% - 20px);
+    border : solid 0.38px #585858;
+    height : calc(90vh - 20px);
+    border-radius: 1vw;
+    padding : 10px;
+}
+
+.information{
+    margin-top : 3.5vh;
+    width : 60vw;
+    height : 43vh;
+    display : flex;
+    justify-content: space-around;
+    flex-wrap : wrap;
+}
+
+.inputWrap{
+    height : 9vh;
+}
+
+.agree{
+    margin-top : 2vh;
+    width : 60vw;
+    height : 8vh;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.agree_input_wrap{
+    display : flex;
+    align-items: center;
+    width : 64%;
+    font-size : 1.2vw;
+    color : black;
+    margin-bottom : 1vh;
+}
+
+.agree_input{
+    display : none;
+}
+
+.label{
+    display : inline-block;
+    border : solid 1.4px black;
+    width : 1.5vw;
+    height : 1.5vw;
+    margin-right : 0.3vw;
+    border-radius : 0.2vw;
+    cursor: pointer;
+}
+
+.agree_input:checked + label{
+    background-color: #FFC977;
+    
+    position : relative;
+}
+
+.agree_input:checked + label::after{
+    display : inline-block;
+    content : '✔';
+    font-size : 1vw;
+    text-align: center;
+    position : absolute;
+    top : -0.01vw;
+    left : -1.5px;
+    height : 1.5vw;
+    width : 1.5vw;
+    color : white;
+    line-height: 1.5vw;
+}
+
+.noticeWrap{
+    width : 60vw;
+    display : flex;
+    justify-content: center;
+}
+
+.notice{
+    width : 64%;
+    color : #C2C2C2;
+}
+
+.applyWrap{
+    margin-top : 3vh;
+    width : 60vw;
+    display : flex;
+    justify-content: center;
+    margin-bottom : 10vh;
+}
+
+.apply{
+    width : 64%;
+    height : 8.5vh;
+    background-color: #FF9A00;
+    color : white;
+    font-weight: bold;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.tel{
+
+}
+
+.email{
+
+}
+
+.product_url_1{
+
+}
+
+.product_url_2{
+
+}
+
+.normal_brand{
+
+}
+
+.eco_brand{
+
+}
