@@ -1,0 +1,94 @@
+.main{
+    width : 100vw;
+    height : 500vh;
+    overflow : hidden;
+}
+
+.first{
+    width : 91vw;
+    height : calc(80vh - 3px);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin : 0 auto;
+    border-bottom : solid 3px #A4A4A4;
+}
+
+.mid{
+    position : relative;
+    top : -6vh;
+    width : 44vw;
+    height : 26vh;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: center;
+}
+
+.imgWrap{
+    width : 6vw;
+    height : 6vw;
+    position: relative;
+    left : 0.3vw;
+}
+
+.img{
+    width : 6vw;
+    height : 6vw;
+}
+
+.message{
+    width : 100%;
+    height : 15vh;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    font-size : 3vw;
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-spacing: -9px;
+}
+
+.app_name{
+    width : fit-content;
+    height : fit-content;
+    color : #FF9A00;
+}
+
+.buttonWrap{
+    width : 23vw;
+    height : 7vh;
+    margin-top : 6vh;
+    display : flex;
+    justify-content: space-between;
+}
+
+.button{
+    
+    width : 11vw;
+    height : 100%;
+    border-radius: 15px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.costmer_apply{
+    background-color: #FF9A00;
+    color : white;
+    font-weight: bold;
+}
+
+.brand_apply{
+    border: solid 1px #A8A8A8;
+    font-weight: bold;
+}
+
+.second{
+    width : 100vw;
+    height : 100vh;
+}
+
+.overview{
+    width : 100vw;
+    height : 100vh;
+}
