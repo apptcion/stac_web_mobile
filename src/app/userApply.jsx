@@ -25,9 +25,9 @@ export default function UserApply(){
                 }
     
                 alert("유저 등록 신청 중....")
-                fetch('https://stac-nine.vercel.app/api/addUser',{
+                fetch('http://localhost:3000/api/addUser',{
                     method : 'POST',
-                    body : data
+                    body : JSON.stringify(data)
                 })
                 .then((response) => {
                     if(response.ok) return alert('유저 등록 완료')
