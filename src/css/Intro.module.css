@@ -76,11 +76,13 @@
     background-color: #FF9A00;
     color : white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .brand_apply{
     border: solid 1px #A8A8A8;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .second{

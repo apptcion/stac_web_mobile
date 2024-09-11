@@ -97,7 +97,11 @@ export default function BrandApply() {
                 </div>
 
                 <div className={styles.show_policy}>
-                    <div className={styles.check}>입점기준 확인하기</div>
+                    <input type='checkbox' className={styles.policy_checkbox} id="checkBox"/>
+                    <label htmlFor='checkBox' className={styles.policy_label}>
+                        <div className={styles.check}>입점기준 확인하기</div>
+                        <div className={styles.arrow}></div>
+                    </label>
                     <div className={styles.policy}>
                         1.<br />
                         2.<br />

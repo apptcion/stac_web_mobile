@@ -1,10 +1,35 @@
+'use client'
+import {useEffect} from 'react'
 import Image from 'next/image'
 
 import styles from '../css/Intro.module.css'
+import HeaderStyle from '../css/header.module.css'
 import logo from '../imgs/logo_color.svg'
 import overview from '../imgs/overview.svg'
 
-export default function Intro(){
+export default function Intro(props){
+
+    useEffect(() => {
+        const CostmerApplyBtn = document.querySelector(`.${styles.costmer_apply}`)
+        const BrandApplyBtn = document.querySelector(`.${styles.brand_apply}`)
+
+        const toCostmerApply = () => {
+            props.setState(`${HeaderStyle.costmer_apply}`)
+        }
+
+        const toBrandApply = () => {
+            props.setState(`${HeaderStyle.brand_apply}`)
+        }
+
+        CostmerApplyBtn.addEventListener('click', toCostmerApply);
+        BrandApplyBtn.addEventListener('click', toBrandApply)
+
+        return () => {
+            CostmerApplyBtn.removeEventListener('click', toCostmerApply)
+            BrandApplyBtn.removeEventListener('click', toBrandApply)
+        }
+    })
+
     return (
         <div className={styles.main}>
             <div className={styles.first}>

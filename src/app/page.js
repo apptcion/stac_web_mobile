@@ -17,9 +17,9 @@ export default function Home() {
   }
 
   return (
-    <main style={{'background-color' : 'white'}}>
+    <main style={{'backgroundColor' : 'white'}}>
       <Header state={screen} setState={changeScreen}/>
-      {screen === HeaderStyles.intro && <Intro />}
+      {screen === HeaderStyles.intro && <Intro setState={changeScreen} />}
       {screen === HeaderStyles.costmer_apply && <UserApply />}
       {screen === HeaderStyles.brand_apply && <BrandApply />}
     </main>    

@@ -31,6 +31,7 @@ export default function Header(props){
         brandApplyButton.addEventListener('click', brandApplyClick)
 
         document.querySelector(`.${styles.selected}`).classList.remove(`${styles.selected}`)
+        console.log(props.state)
         document.querySelector(`.${props.state}`).classList.add(`${styles.selected}`)
 
         return () => {
