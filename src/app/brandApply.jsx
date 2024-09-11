@@ -17,6 +17,8 @@ export default function BrandApply() {
         const normal_brand = document.querySelector(`.${styles.normal_brand}`)
         const eco_brand = document.querySelector(`.${styles.eco_brand}`)
 
+        const personalInfoCheckBox = document.querySelector(`#personal`)
+
         const applyBtn = document.querySelector(`.${styles.apply}`)
         const toNormalBrand = () => {
             console.log("To Normal : ", brand_type)
@@ -38,29 +40,33 @@ export default function BrandApply() {
         }
 
         const submit = () => {
-            let data = {
-                brand_name : brandNameInput.value,
-                brand_type : brand_type,
-                tel : telInput.value,
-                email : emailInput.value,
-                productUrl1 : productUrl1Input.value,
-                productUrl2 : productUrl2Input.value
+            if(personalInfoCheckBox.checked){
+
+                let data = {
+                    brand_name : brandNameInput.value,
+                    brand_type : brand_type,
+                    tel : telInput.value,
+                    email : emailInput.value,
+                    productUrl1 : productUrl1Input.value,
+                    productUrl2 : productUrl2Input.value,
+                    sendMail : document.querySelector(`#message`).checked,
+                    personal : personalInfoCheckBox.checked,
+                }
+    
+                console.log(data)
+                alert('등록 중....')
+    
+                fetch('https://stac-nine.vercel.app/api/addBrand', {
+                    method : 'POST',
+                    body : JSON.stringify(data)
+                })
+                .then((response) => {
+                    if(response.ok) return alert('브랜드가 등록되었습니다...!')
+                    else return alert('브랜드 이름이 이미 존재합니다.')
+                })
+            }else{
+                alert('개인정보 수집 및 이용에 동의해주세요.!!')
             }
-
-            console.log(data)
-
-            fetch('https://stac-nine.vercel.app/api/addBrand', {
-                method : 'POST',
-                body : JSON.stringify(data)
-            })
-            .then((response) => {
-                
-                alert("브랜드가 등록되었습니다...!!")
-                if(response.ok) return response.json()
-            })
-            .then((result) => {
-                console.log(result)
-            })
         }
 
         normal_brand.addEventListener('click', toNormalBrand)
@@ -71,7 +77,7 @@ export default function BrandApply() {
             normal_brand.removeEventListener('click', toNormalBrand)
             eco_brand.removeEventListener('click', toEcoBrand)
             applyBtn.removeEventListener('click', submit)
-        }
+         }
 
     },[])
 
