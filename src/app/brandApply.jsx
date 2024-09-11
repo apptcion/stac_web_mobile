@@ -83,7 +83,7 @@ export default function BrandApply() {
 
     return (
         <div className={styles.main}>
-            <form className={styles.page} action='/'>
+            <div className={styles.page}>
                 <div className={styles.title_wrap}>
                     <div className={styles.title}>브랜드 입점 신청</div>
                     <div className={styles.boon}>브랜드 사전 입점시 다양한 혜택이 제공될 예정입니다</div>
@@ -128,7 +128,7 @@ export default function BrandApply() {
                 <div className={styles.applyWrap}>
                     <div className={styles.apply}>신청확인</div>
                 </div>
-            </form>
+            </div>
         </div>
     )
 }
