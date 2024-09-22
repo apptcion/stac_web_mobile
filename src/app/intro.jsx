@@ -6,6 +6,7 @@ import styles from '../css/Intro.module.css'
 import HeaderStyle from '../css/header.module.css'
 import logo from '../imgs/logo_color.svg'
 import overview from '../imgs/overview.svg'
+import overview2 from '../imgs/overview2.svg'
 
 export default function Intro(props){
 
@@ -47,7 +48,8 @@ export default function Intro(props){
             </div>
             <div className={styles.second}>
                 <Image className={styles.overview} src={overview} alt=''/>
+                <Image className={styles.overview} src={overview2} alt=''/>
             </div>
         </div>
     )
-}
+}``

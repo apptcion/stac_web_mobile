@@ -28,6 +28,7 @@
     display : flex;
     align-items: center;
     justify-content: center;
+    color : black;
 }
 
 .boon{
@@ -63,6 +64,8 @@
     font-size : 1.6vw;
     text-align: center;
     font-weight: 500;
+    background-color: white;
+    color : black;
 }
 
 
