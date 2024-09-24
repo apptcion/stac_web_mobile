@@ -160,7 +160,7 @@ export default function BrandApply() {
                         </div>
 
                         <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
-                            <div className={`${styles.policy_detail_title}`}>7. 세컨렌즈, 구제의류 상품</div>
+                            <div className={`${styles.policy_detail_title}`}>7. 세컨핸즈, 구제의류 상품</div>
                             <div className={`${styles.policy_detail_content}`}>
 
                             </div>
