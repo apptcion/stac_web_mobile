@@ -103,10 +103,63 @@ export default function BrandApply() {
                         <div className={styles.arrow}></div>
                     </label>
                     <div className={styles.policy}>
-                        1.<br />
-                        2.<br />
-                        3.<br />
-                        4.<br />
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>1. 업사이클링 제품 판매</div>
+                            <div className={`${styles.policy_detail_content}`}>
+                                유저의 안 쓰는 물품 및 버려져 폐기되는 재료로<br />
+                                새로운 상품 제작을 주로 하는 브랜드에 한함.
+                            </div>
+                        </div>
+
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>2. 슬로우패션 브랜드</div>
+                            <div className={`${styles.policy_detail_content}`}>
+                                슬로우 패션 브랜드는 샛별의 4가지 윤리기준인 <br />
+                                공정 무역 , 지속 가능 원료, 리사이클·업사이클 원료,<br /> 
+                                비건에 맞추어 제작된 제품에 한함. <br />
+                                <br />
+                                이외의 지속가능한 · 환경적으로 브랜드를 만들어나갈<br />
+                                독창적인 방법이 있을시 별도 입점 가능함.<br />
+                                <br />
+                                모든 슬로우패션 브랜드는 브랜드 상품 및 운영방식이<br />
+                                가지는 가치를 필수로 기입해야함.
+                            </div>
+                        </div>
+
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>3. 제작과정에서 환경을 보호하는 제품 판매</div>
+                            <div className={`${styles.policy_detail_content}`}>
+                            </div>
+                        </div>
+
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>4. 환경을 생각한 패키징</div>
+                            <div className={`${styles.policy_detail_content}`}>
+                            재활용이 용이한 패키징 및 일회용품을 사용하지 않은<br />
+                            최소한의 패키징 등 환경에 도움이 되는 패키징에 한함.<br />
+                            <br />
+                            재활용 방법 등을 상세페이지나 제품에 명시해야함.<br />
+                            </div>
+                        </div>
+
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>5. 일회용품 대체품</div>
+                            <div className={`${styles.policy_detail_content}`}>
+                            </div>
+                        </div>
+
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>6. 제로웨이스트 상품</div>
+                            <div className={`${styles.policy_detail_content}`}>
+                            </div>
+                        </div>
+
+                        <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
+                            <div className={`${styles.policy_detail_title}`}>7. 세컨렌즈, 구제의류 상품</div>
+                            <div className={`${styles.policy_detail_content}`}>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.information}>

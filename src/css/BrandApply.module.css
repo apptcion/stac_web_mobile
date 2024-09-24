@@ -99,6 +99,7 @@
     text-align: center;
     font-weight: 500;
     background-color: white;
+    color : black;
 }
 
 .input::placeholder{
@@ -139,18 +140,35 @@
     width : 0.7vw;
     height : 0.7vw;
     position : relative;
-    top : 0.7vw;
+    top : 0.2vw;
 }
 
 .policy_checkbox:checked + .policy_label .arrow{
     transform: rotate(-135deg);
-    top : 0.2vw;
+    top : 0.7vw;
 }
 
 .policy_checkbox:checked + .policy_label + .policy{
     border : solid 0.38px #585858;
     height : calc(90vh - 20px);
     padding : 10px;
+    overflow-y : scroll;
+}
+
+.policy::-webkit-scrollbar{
+    position: relative;
+    width : 1vw;
+}
+
+.policy::-webkit-scrollbar-thumb{
+    background-color : #FFC977;
+    background-clip: padding-box;
+    border : 0.3vw solid transparent;
+    border-radius: 0.5vw;
+}
+
+.policy::-webkit-scrollbar-track{
+    border-radius: 0.25vw;
 }
 
 .check{
@@ -168,6 +186,27 @@
     border-radius: 1vw;
     padding : 0px; /*10px;*/
     overflow : hidden;
+}
+
+.policy_detail{
+    width : calc(100% - 2vw);
+    padding : 1vw;
+    height : fit-content;
+}
+
+.policy_detail_title{
+    width : 100%;
+    color : black;
+    font-size : 1.5vw;
+    font-weight: bold;
+    margin-bottom : 0.6vw;
+}
+
+.policy_detail_content{
+    color : #5C5C5C;
+    width : 100%;
+    margin-bottom : 1vw;
+    font-size : 1.3vw;
 }
 
 .information{
