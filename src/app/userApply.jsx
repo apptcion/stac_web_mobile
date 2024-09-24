@@ -21,17 +21,21 @@ export default function UserApply(){
                     username : username.value,
                     tel : tel.value,
                     sendMail : sendMailCheckBox.checked,
-                    personalInfo : personalInfo.checked
+                    personal : personalInfo.checked
                 }
+                
+                document.querySelector('#Modal').style.display = 'flex'
     
-                alert("유저 등록 신청 중....")
                 fetch('https://stac-nine.vercel.app/api/addUser',{
                     method : 'POST',
                     body : JSON.stringify(data)
                 })
                 .then((response) => {
-                    if(response.ok) return alert('유저 등록 완료')
-                    else return alert('유저 등록 실패. 존재하는 전화번호입니다.')
+                    if(response.ok) return response.json()
+                })
+                .then((data) => {
+                    document.querySelector('#Modal').style.display = 'none'
+                    alert(data.msg)
                 })
             }else{
                 return alert("개인정보 수집 및 이용에 동의해주세요..!!!")
@@ -48,6 +52,9 @@ export default function UserApply(){
 
     return (
         <main className={styles.main}>
+            <div id="Modal" className={styles.modal}>
+                등록 중...
+            </div>
             <div className={styles.title_wrap}>
                 <div className={styles.title}>서비스 사전신청</div>
                 <div className={styles.boon}>사전신청시 베타버전 사용 및 포인트 혜택이 제공됩니다.</div>

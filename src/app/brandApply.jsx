@@ -52,17 +52,21 @@ export default function BrandApply() {
                     sendMail : document.querySelector(`#message`).checked,
                     personal : personalInfoCheckBox.checked,
                 }
-    
-                console.log(data)
-                alert('등록 중....')
+
+                document.querySelector('#Modal').style.display = 'flex'
     
                 fetch('https://stac-nine.vercel.app/api/addBrand', {
                     method : 'POST',
                     body : JSON.stringify(data)
                 })
                 .then((response) => {
-                    if(response.ok) return alert('브랜드가 등록되었습니다...!')
-                    else return alert('브랜드 이름이 이미 존재합니다.')
+                    if(response.ok){
+                        return response.json()
+                    }
+                })
+                .then((data) => {
+                    document.querySelector('#Modal').style.display = 'none'
+                    alert(data.msg)
                 })
             }else{
                 alert('개인정보 수집 및 이용에 동의해주세요.!!')
@@ -83,6 +87,9 @@ export default function BrandApply() {
 
     return (
         <div className={styles.main}>
+            <div id="Modal" className={styles.modal}>
+                등록 중...
+            </div>
             <div className={styles.page}>
                 <div className={styles.title_wrap}>
                     <div className={styles.title}>브랜드 입점 신청</div>
