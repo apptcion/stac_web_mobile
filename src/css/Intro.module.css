@@ -43,14 +43,17 @@
     height : 15vh;
     font-weight: bolder;
     font-family: 'Inter', sans-serif;
-    font-size : 7vw;
+    font-size : 6vw;
     display : flex;
     justify-content: center;
     flex-wrap: wrap;
     margin : 0px;
+    margin-top: 2vh;
 }
 
 .line{
+    position : relative;
+    top : -3vh;
     margin : 0px;
 }
 
