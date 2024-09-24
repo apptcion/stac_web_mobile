@@ -129,6 +129,11 @@ export default function BrandApply() {
                         <div className={`${styles.policy_detail} ${styles.policy_detail_1}`}>
                             <div className={`${styles.policy_detail_title}`}>3. 제작과정에서 환경을 보호하는 제품 판매</div>
                             <div className={`${styles.policy_detail_content}`}>
+                            제작과정중 저탄소, 친환경 인증 등 인증마크를 받거나<br />
+                            제작과정중 환경보호를 인증할 수 있는 브랜드에 한함.<br />
+                            <br />
+                            브랜드 상품이 제작과정에서 환경을 보호한다는 가치를<br />
+                            필수적으로 명시해야함. <br />
                             </div>
                         </div>
 
