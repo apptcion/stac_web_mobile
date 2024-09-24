@@ -1,6 +1,6 @@
 .main{
     width : 100vw;
-    height : 500vh;
+    height : 160vh;
     overflow : hidden;
 }
 
@@ -17,23 +17,24 @@
 .mid{
     position : relative;
     top : -6vh;
-    width : 44vw;
-    height : 26vh;
+    width : 85vw;
+    height : 35vh;
     display : flex;
     flex-wrap : wrap;
     justify-content: center;
 }
 
 .imgWrap{
-    width : 6vw;
-    height : 6vw;
+    width : 24vw;
+    height : 24vw;
+    margin-bottom : 1vh;
     position: relative;
-    left : 0.3vw;
+    left : 1vw;
 }
 
 .img{
-    width : 6vw;
-    height : 6vw;
+    width : 24vw;
+    height : 24vw;
 }
 
 .message{
@@ -42,11 +43,15 @@
     height : 15vh;
     font-weight: bolder;
     font-family: 'Inter', sans-serif;
-    font-size : 3vw;
+    font-size : 7vw;
     display : flex;
     justify-content: center;
     flex-wrap: wrap;
-    word-spacing: -9px;
+    margin : 0px;
+}
+
+.line{
+    margin : 0px;
 }
 
 .app_name{
@@ -56,8 +61,8 @@
 }
 
 .buttonWrap{
-    width : 23vw;
-    height : 7vh;
+    width : 100vw;
+    height : 10vh;
     margin-top : 6vh;
     display : flex;
     justify-content: space-between;
@@ -65,7 +70,7 @@
 
 .button{
     
-    width : 11vw;
+    width : 40vw;
     height : 100%;
     border-radius: 15px;
     display : flex;
@@ -89,10 +94,10 @@
 
 .second{
     width : 100vw;
-    height : 100vh;
+    height : 60vh;
 }
 
 .overview{
     width : 100vw;
-    height : 100vh;
+    height : 30vh;
 }
